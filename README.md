@@ -1,3 +1,3 @@
 # Portfolio
 I am Ganesh
-I am developing this website.
+I ama a student.
