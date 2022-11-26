@@ -1,71 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-  <!-- stylesheet  -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <section id="header">
-  <!-- navbar -->
-  <nav class="">
-    <div>
-      <div class="flex justify-between">
-        <div class=" md:flex space-x-4 pt-6">
-          <!-- logo -->
-        <div class="logo">
-          <a href="#">
-            <img src="logo.png.jpeg" alt="" class="md:h-16 h-14 ml-4 mt-2">
-          </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="header" class="bg-cyan-100 h-96">
+      <!-- navbar -->
+      <nav class="">
+        <div>
+          <div class="flex justify-between">
+            <div class="md:flex space-x-4 pt-6">
+              <!-- logo -->
+              <div class="logo">
+                <a href="#">
+                  <img
+                    src="logo.png.jpeg"
+                    alt=""
+                    class="md:h-16 h-14 ml-4 mt-2"
+                  />
+                </a>
+              </div>
+              <!-- lefthand part of the nav -->
+              <div class="primary-nav">
+                <div class="md:flex hidden fitems space-x-6 py-6 pl-16">
+                  <a href="#" class="text-cyan-500 hover:underline">Home</a>
+                  <a href="#" class="text-cyan-500 hover:underline">About Us</a>
+                  <button href="#" class="text-cyan-500 hover:underline">
+                    Contact Us
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Right part of the nav  -->
+            <div
+              class="secondary-nav hidden pr-5 md:flex items-center space-x-8 mt-2 mr-4"
+            >
+              <a href="#" class="py-1 px-3 text-cyan-500">Login</a>
+              <a
+                href="#"
+                class="text-cyan-500 py-1 px-3 outline outline-offset-2 outline-cyan-500 rounded-xl w-22"
+                >Sign Up</a
+              >
+            </div>
+            <!-- hamburger menu icon -->
+            <div class="md:hidden flex items-center">
+              <button class="mobile-menu-button mr-8 pt-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
-        <!-- lefthand part of the nav -->
-    <div class="primary-nav ">
-      <div class="md:flex hidden fitems space-x-6 py-6 pl-16">
-      <a href="#" class="text-cyan-500 hover:underline ">Home</a>
-      <a href="#" class="text-cyan-500 hover:underline ">About Us</a>
-      <button href="#" class="text-cyan-500 hover:underline">Contact Us</button>
-    </div>
-    </div>
+      </nav>
+      <!-- NavBar for smaller devices -->
+      <div class="hidden mobile-menu text-center">
+        <a
+          href="#"
+          class="text-cyan-500 hover:underline block text-sm px-3 py-1"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="text-cyan-500 hover:underline block text-sm px-3 py-1"
+          >About Us</a
+        >
+        <a
+          href="#"
+          class="text-cyan-500 hover:underline block text-sm px-3 py-1"
+          >Contact Us</a
+        >
       </div>
-      <!-- Right part of the nav  -->
-    <div class="secondary-nav hidden pr-5 md:flex items-center space-x-8 mt-2 mr-4">
-      <a href="#"class=" py-1 px-3 text-cyan-500">Login</a>
-      <a href="#"class="text-cyan-500 py-1 px-3 outline outline-offset-2 outline-cyan-500 rounded-xl w-22">Sign Up</a>
-    </div>
-    <!-- hamburger menu icon -->
-    <div class="md:hidden flex items-center">
-      <button class="mobile-menu-button mr-8 pt-6">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
-    </button>
-    </div> 
-  </div>
-    </div>
-  </nav>
-  <!-- NavBar for smaller devices -->
-  <div class=" hidden mobile-menu text-center">
-    <a href="#" class="text-cyan-500 hover:underline block text-sm px-3 py-1">Home</a>
-    <a href="#" class="text-cyan-500 hover:underline block text-sm px-3 py-1">About Us</a>
-    <a href="#" class="text-cyan-500 hover:underline block text-sm px-3 py-1">Contact Us</a>
-  </div>
-  <div>
-    <span class="name text-xl md:text-5xl flex justify-center mt-32 text-cyan-500">ASAP</span>
-    <span class="pt-2 text-lg flex justify-center text-cyan-300" >Tech For Good</span>
-  </div>
-</section>
-<!-- Content Section  -->
+      <div>
+        <span
+          class="name text-xl md:text-5xl flex justify-center mt-32 text-cyan-500"
+          >ASAP</span
+        >
+        <span class="pt-2 text-lg flex justify-center text-cyan-500"
+          >Tech For Good</span
+        >
+      </div>
+    </section>
+    <!-- Content Section  -->
+    <section id="Content">
+      <div class="flex justify-center p-4">
+        <div class="flex flex-col justify-center items-center">
+          <div class="text-cyan-500 font-medium pt-4 underline" id="head">About Us</div>
+          <div
+            class="flex flex-col md:flex-row max-w-7xl justify-center items-center "
+          >
+            <div
+              class="overflow-hidden w-full m-4 flex justify-center rounded-lg md:w-[33%] px-8"
+            >
+              <div
+                class="flex flex-col md:flex-row items-center justify-center"
+              >
+                <div class="items-center justify-center flex py-2">
+                  <div
+                    class="flex flex-col items-center justify-center text-center"
+                  >
+                    <div
+                      class="font-bold text-cyan-500 hover:cursor-pointer hover:underline"
+                    >
+                      Vision
+                    </div>
+                    <div class="text-stone-500 m-2">
+                      Tech for everyone, tech for everything, to rely upon.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-<section id="Content">
+            <div
+              class="overflow-hidden w-full m-4 flex justify-center rounded-lg md:w-[33%] px-8"
+            >
+              <div
+                class="flex flex-col md:flex-row items-center justify-center"
+              >
+                <div class="items-center justify-center flex py-2">
+                  <div
+                    class="flex flex-col items-center justify-center text-center"
+                  >
+                  
+                    <div class="font-bold text-cyan-500 hover:cursor-pointer hover:underline">Mission</div>
+                    <div class="text-stone-500 m-2">
+                      Providing clean tech for a better and prospering world.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-
-</section>
-  <script src="index.js"></script>
-</body>
+            <div
+              class="overflow-hidden w-full m-4 flex justify-center rounded-lg md:w-[33%] px-8"
+            >
+              <div
+                class="flex flex-col md:flex-row items-center justify-center"
+              >
+                <div class="items-center justify-center flex py-2">
+                  <div
+                    class="flex flex-col items-center justify-center text-center"
+                  >
+                  
+                    <div class="font-bold text-cyan-500 pt-10 hover:cursor-pointer hover:underline ">Values</div>
+                    <div class="text-stone-500 m-2">
+                      Believe in growth. innovative over routine. enhancing
+                      quality of life through tech. there is solution for
+                      everything. minute details matter.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Team -->
+      <div>
+       
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
 </html>
